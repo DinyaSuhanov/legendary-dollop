@@ -44,7 +44,7 @@
 
 
                                                 //ДЗ Задача N1
-                                                
+
 // using System;
 
 // public class Answer
@@ -88,50 +88,86 @@
 
                                                     //ДЗ задача 2
 
+// using System;
+
+// public class Answer
+// {
+//     static int FindMax(int a, int b, int c)
+//     {
+//         // Введите свое решение ниже
+//         if (a > b && a > c)
+//         {
+//           return(a);
+//         }
+//         else if (b > a && b > c) 
+//         {
+//            return(b);
+//         }
+//         else 
+//         {
+//             return(c);
+//         }
+//     }
+
+//     // Не удаляйте и не меняйте метод Main!
+//     static public void Main(string[] args)
+//     {
+//         int a,
+//             b,
+//             c;
+
+//         if (args.Length >= 3)
+//         {
+//             a = int.Parse(args[0]);
+//             b = int.Parse(args[1]);
+//             c = int.Parse(args[2]);
+//         }
+//         else
+//         {
+//             // Здесь вы можете поменять значения для отправки кода на Выполнение
+//             a = 10;
+//             b = 6;
+//             c = 7;
+//         }
+
+//         // Не удаляйте строки ниже
+//         int result = FindMax(a, b, c);
+//         System.Console.WriteLine($"{result}");
+//     }
+// }
+
+
+                                                   //ДЗ задача 3
+
 using System;
 
-public class Answer
+class Answer {
+    static void CheckIfEven(int number)
+    {
+      // Введите свое решение ниже
+if (number % 2 == 0)
 {
-    static int FindMax(int a, int b, int c)
-    {
-        // Введите свое решение ниже
-        if (a > b && a > c)
-        {
-          return(a);
-        }
-        else if (b > a && b > c) 
-        {
-           return(b);
-        }
-        else 
-        {
-            return(c);
-        }
+Console.WriteLine("Число `"+number+"` чётное");
+}
+else
+{
+Console.WriteLine("Число `"+number+"` нечётное");
+}
     }
+  
 
-    // Не удаляйте и не меняйте метод Main!
-    static public void Main(string[] args)
-    {
-        int a,
-            b,
-            c;
+  // Не удаляйте и не меняйте метод Main! 
+    static public void Main(string[] args) {
+        int number;
 
-        if (args.Length >= 3)
-        {
-            a = int.Parse(args[0]);
-            b = int.Parse(args[1]);
-            c = int.Parse(args[2]);
-        }
-        else
-        {
-            // Здесь вы можете поменять значения для отправки кода на Выполнение
-            a = 10;
-            b = 6;
-            c = 7;
+        if (args.Length >= 1) {
+            number = int.Parse(args[0]);
+        } else {
+           // Здесь вы можете поменять значения для отправки кода на Выполнение
+            number = 10987;
         }
 
         // Не удаляйте строки ниже
-        int result = FindMax(a, b, c);
-        System.Console.WriteLine($"{result}");
+        CheckIfEven(number);
     }
 }
